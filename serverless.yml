@@ -112,6 +112,6 @@ functions:
           authorizer: aws_iam
 
   # Create our resources with separate CloudFormation templates
-  resources:
+resources:
   # API Gateway Errors
-    - ${file(resources/api-gateway-errors.yml)}
+  - ${file(resources/api-gateway-errors.yml)}
