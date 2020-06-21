@@ -25,7 +25,7 @@ provider:
   # These environment variables are made available to our functions
   # under process.env.
   environment:
-    tableName: notes
+    tableName: ${self:custom.tableName}
     stripeSecretKey: ${env:STRIPE_SECRET_KEY}
 
   # 'iamRoleStatements' defines the permission policy for the Lambda function.
